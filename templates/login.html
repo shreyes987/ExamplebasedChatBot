@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+	<link rel="stylesheet" href="static/css/test2.css"/>
+</head>
+<body>
+<script>
+function myFunction()
+{
+if(/\W/.test(document.getElementById("user").value))
+{
+  alert("special characters not allowed");
+  document.getElementById("user").value="";
+  document.getElementById("user").focus();
+  return false;
+}
+
+
+if((document.getElementById("pass").value)==(document.getElementById("user").value))
+{
+alert("username and password should not be same");
+document.getElementById("pass").value="";
+document.getElementById("pass").focus();
+return false;
+}
+var a=/[a-z]/;
+if(!a.test(document.getElementById("pass").value))
+{
+  alert("password should contain small characters");
+  document.getElementById("user").value="";
+  document.getElementById("user").focus();
+  return false;
+}
+var b=/[A-Z]/;
+if(!b.test(document.getElementById("pass").value))
+{
+  alert("password should contain uppercase characters");
+  document.getElementById("pass").value="";
+  document.getElementById("pass").focus();
+  return false;
+}
+var c=/[0-9]/;
+if(!c.test(document.getElementById("pass").value))
+{
+  alert("password should contain a Digit");
+  document.getElementById("pass").value="";
+  document.getElementById("pass").focus();
+  return false;
+}
+
+if(document.getElementById("pass").value.length<6 || document.getElementById("pass").value.length>14)
+{
+alert("change password");
+return false;
+}
+if((document.getElementById("pass").value)!= (document.getElementById("repass").value))
+{
+  alert("check password");
+
+  document.getElementById("repass").value="";
+document.getElementById("repass").focus();
+  return false;
+}
+
+}
+</script>
+<center><span id="top"><b><h1>Login & Register</h1></b></span></center>
+<div id="fm"><span id="text1"><b>Register Now</b></span><span id="pencil"><img src="static/images/pe.png" width="40px" height="40px"></span>
+    <form action="/reg_data" method="post" onsubmit='return myFunction()'>
+    <div id="elements"> <input type="text" name="user" id="user" style="font-size: 14pt; height: 40px; width:350px" placeholder="Username" required/><br><br><br>
+     <input type="email" name="email" id="email" style="font-size: 14pt; height: 40px; width:350px" placeholder="Email" required/><br><br><br>
+    <input type="password" name="pass" id="pass" style="font-size: 14pt; height: 40px; width:350px" placeholder="Password" required/><br><br><br>
+    <input type="password" name="repass" id="repass" style="font-size: 14pt; height: 40px; width:350px" placeholder="Re-type password"/><br><br><br>
+   <span id="sub"> <input type="submit" value = "Sign me up!" style="font-size: 14pt; height: 40px; width:350px"></span>
+    </div>
+    </form>
+
+</div>
+<span id="image"><img src="static/images/line.png"></span>
+<div id="login12"><span id="text1">Login</span><span id="lock"><img src="static/images/lock.png" width="40px" height="40px"></span>
+<form action="/login_data" method="post">
+       <div id="elements1"> <input type="text" name="user" style="font-size: 14pt; height: 40px; width:350px" placeholder="Username" required//><br><br><br>
+        <input type="password" name="pass" style="font-size: 14pt; height: 40px; width:350px" placeholder="Password" required//><br><br><br>
+        <input type="submit" value="Sign in!" name="Login" style="font-size: 14pt; height: 40px; width:350px">
+		</div>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body
+{
+
+  
+    background-image:url("22.jpg");
+	 -webkit-background-size: cover;
+	height:1000px;
+	overflow:hidden;
+}
+#dob
+{
+color:white;
+}
+
+#gender
+{
+color:white;
+}
+
+
+label {
+    margin-bottom: 70px;
+	padding:40px;
+}
+
+#newtext
+{
+color:white;
+position:relative;
+right:10px;
+}
+
+input[type="submit"]
+{
+background:#70C9F6;
+}
+
+#input
+{
+
+position:relative;
+top:-10px;
+width:800px;
+height:700px;
+left:270px;
+opacity:0.80;
+background: rgba(0, 0, 0, 0.5) none;
+overflow:hidden;
+}
+#elements
+{
+
+position:absolute;
+top:-20px;
+left:65px;
+opacity:1;
+
+}

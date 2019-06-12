@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+	<link rel="stylesheet" href="static/css/test3.css"/>
+</head>
+<body>
+
+<div id="input">
+
+   <div id="elements"><span id="newtext"><b><h1><center>Biography</center></h1></b></span>
+       <form action="/bio_data" method="post">
+           <input type="text" name="name" style="font-size: 14pt; height: 25px; width:650px" placeholder="Fullname" value="{{entry[1]}}"><br><br><br>
+    <span id="dob">DOB:</span> <input type="date" name="dob" value="{{entry[2]}}">
+           {% if entry[3] == 'male'%}
+    <label><span id="gender">Gender:</span>
+    <input type="radio" name="gender" value="male" checked> <span id="gender">Male</span>
+    <input type="radio" name="gender" value="female"><span id="gender">Female</span></label><br><br><br>
+           {% else %}
+           <label><span id="gender">Gender:</span>
+    <input type="radio" name="gender" value="male"> <span id="gender">Male</span>
+    <input type="radio" name="gender" value="female" checked><span id="gender">Female</span></label><br><br><br>
+    {% endif %}
+           <input type="text" name="email" style="font-size: 14pt; height: 25px; width:650px" placeholder="Email" value="{{entry[4]}}"><br><br><br>
+    <input type="text" name="web" style="font-size: 14pt; height: 25px; width:650px" placeholder="Website" value="{{entry[5]}}"><br><br><br>
+    <input type="text" name="prof" style="font-size: 14pt; height: 75px; width:650px" placeholder="Profession" value="{{entry[6]}}"><br><br><br>
+    <input type="text" name="org" style="font-size: 14pt; height: 25px; width:650px" placeholder="Working at"  value="{{entry[7]}}"><br><br><br>
+    <input type="text" name="study" style="font-size: 14pt; height: 25px; width:650px" placeholder="Studied at" value="{{entry[8]}}"><br><br><br>
+     <input type="text" name="hob" style="font-size: 14pt; height: 25px; width:650px" placeholder="Hobbies" value="{{entry[9]}}"><br><br><br>
+    <center><input type="submit" style="width:150px">&nbsp;&nbsp;<input type="button" value="Go Home" onclick="location.href='/'" style="width:120px ; height:40px"></center>
+           </form>
+	</div>
+
+</div>
+</body>
+</html>

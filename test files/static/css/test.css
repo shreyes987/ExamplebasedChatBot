@@ -1,0 +1,10 @@
+#inp
+{
+width:400px
+}
+
+#text
+{
+display: table-cell;
+vertical-align: bottom;
+}

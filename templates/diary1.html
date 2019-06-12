@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function getEntry(){
+            document.getElementById('frm').action="/get_diary"
+            document.getElementById('frm').submit();
+        }
+
+    </script>
+</head>
+<form action="/diary_data" id="frm" method="post">
+    <textarea name="entry">{% if entry!= None %}{{entry}}{% endif %}</textarea>
+    {% if entry!= None %}
+    <input name="date" type="date" value="{{date}}" onchange="getEntry()"/>
+    {% else %}
+    <input name="date" type="date" id="date" onchange="getEntry()"/>
+    {% endif %}
+    <input type="submit"/>
+</form>
+<form action="/question_data" method="post">
+    <input type="text" name="question">
+    <input type="submit" value="ask"/>
+</form>
+{{ans}}
+</body>
+</html>

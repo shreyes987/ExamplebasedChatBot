@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/bio_data" method="post">
+    Name: <input type="text" name="name" value="{{name}}"/><br>
+    DOB: <input type="date" name="dob" value="{{dob}}"><br>
+    {% if gender=='male'%}
+    Gender: <input type="radio" name="gender" value="male" checked> Male<input type="radio" name="gender" value="female"> Female<br>
+    {% else %}
+    Gender: <input type="radio" name="gender" value="male"> Male<input type="radio" name="gender" value="female" checked> Female<br>
+    {% endif %}
+    Email: <input type="text" name="email" value="{{email}}" /><br>
+    Website: <input type="text" name="web" value="{{web}}"/><br>
+    Profession: <input type="text" name="prof" value="{{prof}}"/><br>
+    Working at: <input type="text" name="org" value="{{org}}"/><br>
+    Studied at: <input type="text" name="study" value="{{study}}"/><br>
+    Hobbies: <input type="text" name="hob" value="{{hob}}"/><br>
+    <input type="submit">
+</form>
+</body>
+</html>

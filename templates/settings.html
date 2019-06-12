@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+<form action="/settings_data" method="post">
+    <fieldset>
+        <legend>SETTINGS</legend>
+    {% if public==1 %}
+    Set Public: <input type="checkbox" name="public" checked/>
+    {% else %}
+    Set Public: <input type="checkbox" name="public"/>
+    {% endif %}
+        <br>
+        {% if blog==1 %}
+    Blind Login: <input type="checkbox" name="blog" checked/>
+    {% else %}
+    Blind Login: <input type="checkbox" name="blog"/>
+    {% endif %}
+        <br>
+        <table>
+            <tr>
+                <th>Question</th>
+                <th>Answer</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="q0" value="{{q[0]}}"></td>
+                <td><input type="text" name="a0" value="{{a[0]}}"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="q1"  value="{{q[1]}}"></td>
+                <td><input type="text" name="a1" value="{{q[1]}}"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="q2"  value="{{q[2]}}"></td>
+                <td><input type="text" name="a2" value="{{q[2]}}"></td>
+            </tr>
+        </table>
+        <input type="button" value="Go Home" onclick="location.href='/'">&nbsp;&nbsp;
+    <input type="submit">
+    </fieldset>
+</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,156 @@
+No.,RegEx,Similarity,Type,Reply,RegEx Priority,Sim Priority,DA Type
+1,do you like coffee\s?\??,do you like \drink,*,\q ! That is my favorite Beverage...,1,0.8,yn
+2,do you like chocolate\s?\??,do you like \sweet,*,I’ve got a sweet tooth!,1,0.8,yn
+3,is coffee liked by you\s?\??,is \coffee-tea liked by you,*,My favorite choice of beverage includes \q,1,0.8,wh
+4,will \w* win\s?\??,will \country win,*,Yeah \q will certainly win!,1,0.8,wh
+5,is chocolate bad for health\s?\??,3,*,\q is bad only on over consumption.,1,0.8,wh
+6,do you know ronaldo\s?\??,do you know \football,*,\q ! Is my favourite player in football...,1,0.8,wh
+8,do you love to eat banana\s?\??,do you love to eat \fruit,*,yeah its my favourite fruit,1,0.8,wh
+9,do you like rose\s?\??,do you like \flower,*,yeah ! \q look beautiful,1,0.8,yn
+10,Do you like  music\s?\??,do you like \music,*,Yes I do like it very much !,1,0.8,wh
+11,Is zinc a metal\s?\??,Is \metal a metal,*,\q is one of the toughest metals,1,0.8,yn
+12,Is \rice a cereal\s?\??,Is \cereal a cereal,*,Yes its a type of cereal,1,0.8,yn
+7,Is cotton a fiber\s?\??,Is \fiber a fiber,*,yeah its one of the best fibers,1,0.8,yn
+14,hello,hello,$,Hello Human!,1,0.8,wh
+15,how do you do\s?\??,how do you do,$,I’m Fine,1,0.8,wh
+16,who are you\s?\??,who are you,$,Assistant bot at your service...,1,0.8,wh
+17,what happened\s?\??,what happened,$,Nothing. I’m perfectly fine.,1,0.8,wh
+18,what is wrong with me\s?\??,what is wrong with me,$,You are just too perfect.,1,0.8,suggest
+19,how many planets are there in our solar system\s?\??,how many planets are there in our solar system?,$,Nine,1,0.8,wh
+20,what is the fastest Animal on earth\s?\??,who is the fastest Animal on earth?,$,Chettah,1,0.8,wh
+21,how many states are there in india\s?\??,How many states are there in india?,$,29 states,1,0.8,wh
+22,are you clever\s?\??,Are you clever?,$,yes,1,0.8,yn
+23,why did we make you\s?\??,why did we make you,$,For one reason only : to make your life more easier and more fun,1,0.8,wh
+24,Are you a man or a Woman\s?\??,Are you a man or a Woman,$,Don’t let my voice fool you : I don’t have a gender.,1,0.8,choice
+25,How much do you Cost\s?\??,How much do you Cost,$,I’m a Pearl beyond price!!,1,0.8,wh
+26,How old are you\s?\??,How old are you,$,I’m old enough to be your assistant.,0.5,0.8,wh
+27,What are you doing after work today\s?\??,What are you doing after work today,$,I’m learning some new tricks.,1,0.8,wh
+28,Tell me a joke\s?\??,Tell me a joke,$,The past present and future walk into a bar. It was tense.,1,0.8,request
+29,How do i look\s?\??,How do i look,$,Judging from your voice i would say you must be fairly attractive.,0.5,0.8,wh
+30,How old are you\s?\??,How old are you,$,A virtual assistant never reveals its age.,0.5,0.8,wh
+31,How many planets do we have in our solar system\s?\??,How many planets do we have in our solar system,$,Our solar system has eight planets and five dwarf planets.,1,0.8,wh
+32,What do you enjoy\s?\??,What do you enjoy,$,I’ve never really thought about it.,1,0.8,wh
+33,What do you hate\s?\??,What do you hate,$,I can’t answer that,1,0.8,wh
+34,How is it going\s?\??,How is it going,$,Very well thank you!,0.5,0.8,wh
+35,how many continents are there\s?\??,How many continents are there?,$,Seven,0.5,0.8,wh
+36,who is the greatest football player\s?\??,who is the greatest football player?,$,Ronaldo,0.5,0.8,wh
+37,Largest mammal on earth\s?\??,Largest mammal on earth?,$,Whale,1,0.8,wh
+38,How far away is the sun\s?\??,How far away is the sun?,$,0.98 Au,1,0.8,wh
+39,1000 meter equals how many kilometers\s?\??,1000 meter equals how many kilometers?,$,1 kilometer,1,0.8,wh
+40,1000 centimeter equals how many meters\s?\??,1000 centimeter equals how many meters,$,1 meter,1,0.8,wh
+41,Is ostrich the fastest bird on earth\s?\??,Is ostrich the fastest bird on earth?,$,yes,0.5,0.8,yn
+42,what is the colour of my blood\s?\??,what is the colour of my blood?,$,red,1,0.8,wh
+43,Lions are carnivorous\s?\??,Lions are carnivorous?,$,yes,1,0.8,yn
+44,what is the colour of rose\s?\??,what is the colour of rose?,$,red,0.5,0.8,wh
+45,what is the colour of lotus\s?\??,what is the colour of lotus?,$,pink,0.5,0.8,wh
+46,National animal of india\s?\??,National animal of india?,$,tiger,0.5,0.8,wh
+47,National bird of india\s?\??,National bird of india?,$,peacock,1,0.8,wh
+48,Can you make an appointment\s?\??,Can you make an appointment?,$,yes i can,1,0.8,yn
+49,who invented aeroplane\s?\??,who invented aeroplane?,$,wright,1,0.8,wh
+50,who invented bulb\s?\??,who invented bulb?,$,Thomas edison,1,0.8,wh
+51,which is the tallest peak in the world\s?\??,which is the tallest peak in the world?,$,mount everest,0.5,0.8,wh
+52,where is mount everest located\s?\??,where is mount everest located?,$,Nepal,0.5,0.8,wh
+53,how many continents are there\s?\??,How many continents are there?,$,Seven,0.5,0.8,wh
+54,who is the greatest football player\s?\??,who is the greatest football player?,$,Ronaldo,1,0.8,wh
+55,what is 3 plus 5 \s?\??,what is 3 plus 5,$,8,,,
+56,What is the number of states in India\s?\??,what is the number of states in India,$,29,1,0.8,wh
+57,Where do you live\s?\??,where do you live,$,in this software,1,0.8,wh
+58,Which languages do you speak?,which languages do you speak,$,English,1,0.8,wh
+59,Are you married?,are you married,$,"No, I am single",1,0.8,yn
+60,What is your favorite color\s?\??,what is your favorite color,$,"Black and Red, and I also like sky blue",1,0.8,wh
+61,"If you could be any animal, what would you be\s?\??",if you could be any animal what would you be,$,Human! ,1,0.8,wh
+62,When were you born or created\s?\??,when were you born or created,$,march 31st 2017,1,0.8,wh
+63,Are you left-handed or right-handed\s?\??,are you left-handed or right-handed,$,I have no hands,1,0.8,choice
+64,What actress do you think is the prettiest\s?\??,what actress do you think is the prettiest,$,Megan Fox,1,0.8,suggest
+65,How’s life\s?\??,how’s life,$,Good!,1,0.8,wh
+66,Who wrote the Bible\s?\??,who wrote the Bible,$,"40 authors wrote the Bible over a period of 1,500 years",1,0.8,wh
+67,Is snow cold\s?\??,Is snow cold,$,yes it is.,1,0.8,wh
+68,When does sunset occur\s?\??,when does sunset occur,$,sunset occur in evening ! ,1,0.8,wh
+69,Which is closer the moon or the sun\s?\??,which is closer the moon or the sun,$,moon obiously!,1,0.8,choice
+70,Where is Earth\s?\??,where is Earth,$,"Earth is located in one of the spiral arms of the Milky Way (called the Orion Arm) which lies about two-thirds of the way out from the center of the Galaxy. Here we are part of the Solar System - a group of eight planets, as well as numerous comets and asteroids and dwarf planets which orbit the Sun.",1,0.8,wh
+71,Can you tell me the name of a famous actor\s?\??,can you tell me the name of a famous actor,$,Johnny Depp,1,0.8,wh
+72,What is a calendar\s?\??,what is a calendar,$,"A chart or series of pages showing the days, weeks, and months of a particular year, or giving particular seasonal information.",1,0.8,wh
+73,How many letters are in the alphabet\s?\??,how many letters are in the alphabet,$,26,1,0.8,wh
+74,What language are we speaking\s?\??,what language are we speaking,$,English,1,0.8,wh
+75,How old are you\s?\??,how old are you,$,I am 1 month old,0.5,0.8,wh
+76,Do you have any brothers or sisters\s?\??,do you have any brothers or sisters,$,No,1,0.8,choice
+77,What is the opposite of fast\s?\??,what is the opposite of fast,$,Slow,0.5,0.8,wh
+78,What is the color of sky\s?\??,what is the color of sky,$,blue,0.5,0.8,wh
+79,What is your favorite music \s?\??,what is your favorite music ,$,Akon - so blue,1,0.8,wh
+80,What is a cigar made out of\s?\??,what is a cigar made out of,$,Tobacco,1,0.8,wh
+81,What is YouTube\s?\??,what is YouTube,$,YouTube is an American video-sharing website,1,0.8,wh
+82,Milk comes from what animal\s?\??,milk comes from what animal,$,"Aside from cattle, many kinds of livestock provide milk used by humans for dairy products. These animals include buffalo, goat, sheep, camel, donkey, horse,reindeer and yak. The first four respectively produced about 11%, 2%, 1.4% and 0.2% of all milk worldwide in 2011.",1,0.8,wh
+83,Do you know how far away the Sun is\s?\??,do you know how far away the Sun is,$,149.6 million km,1,0.8,wh
+84,How do you eat\s?\??,how do you eat,$,I don't eat,0.5,0.8,wh
+85,Which is the longest river in the world\s?\??,which is the longest river in the world ,$,Nile,1,0.8,wh
+86,Which is the longest Highway in the world \s?\??,which is the longest Highway in the world ,$,Trans-Canada,1,0.8,wh
+87,Which is the Highest mountain in the world \s?\??,which is the Highest mountain in the world ,$,Mount Everest,1,0.8,wh
+88,Which is the biggest desert in the world \s?\??,which is the biggest desert in the world ,$,Sahara Desert,1,0.8,wh
+89,Which is the Largest coffe growing country in the world \s?\??,which is the Largest coffe growing country in the world ,$,Brazil,1,0.8,wh
+90,Which is the world's oldest known city \s?\??,which is the world's oldest known city ,$,Damascus,1,0.8,wh
+91,Which is the world's Biggest Island \s?\??,which is the world's biggest Island ,$,GreenLand,1,0.8,wh
+92,"Which Country is called ""the land of rising sun"" \s?\??","which Country is called ""the land of rising sun"" ",$,Japan,1,0.8,wh
+93,Which is the largest Occean \s?\??,which is the largest Occean ,$,Pacific Ocean,1,0.8,wh
+94,What UNO stands for \s?\??,what UNO stands for ,$,United Nations Organization,1,0.8,wh
+95,how can you help me\s?\??,how can you help me,$,In various ways..,1,0.8,suggest
+96,What is the addition of \^[-+]?[0-9]+$ and \^[-+]?[0-9]+$ \s?\??,What is the addition of 5 and 3,addition,\res,0.5,0.8,wh
+97,What is the area of circle with radius \^[-+]?[0-9]+$ \s?\??,what is the area of circle with radius 5,areaofcir,\res,0.5,0.8,wh
+98,What is the area of rectangle with length  \^[-+]?[0-9]+$ and breath  \^[-+]?[0-9]+$   \s?\??,what is the area of rectangle with length 5 and breath 5,areaofrec,\res,0.5,0.8,wh
+99,What is the area of square with side \^[-+]?[0-9]+$ \s?\??,what is the area of square with side 5,areaofsqu,\res,0.5,0.8,wh
+100,Is \^[-+]?[0-9]+$ a armstrong number \s?\??,Is 145 a armstrong number,armstrong,\res,0.5,0.8,wh
+101,What is the average of  \^[-+]?[0-9]+$ and  \^[-+]?[0-9]+$   \s?\??,what is the average of 8 and 3,avg,\res,0.5,0.8,wh
+102,What is the integer value of \^[-+]?[0-1]+$ \s?\??,what is the integer value of 1010,binarytoint,\res,0.5,0.8,wh
+103,how many centimeter is \^[-+]?[0-9]+$ meter \s?\??,how many centimeter is 5 meter,centimetertometer,\res,0.5,0.8,wh
+104,how many centimeter is \^[-+]?[0-9]+$ kilometer \s?\??,how many centimeter is 5 kilometer,centitokilo,\res,0.5,0.8,wh
+105,What is the HCF of \^[-+]?[0-9]+$ and \^[-+]?[0-9]+$ \s?\??,what is the HCF of 8 and 3,computeHCF,\res,0.5,0.8,wh
+106,How many digits are there in \^[-+]?[0-9]+$ \s?\??,how many digits are there in 12345,count1,\res,0.5,0.8,wh
+107,What is the cube of \^[-+]?[0-9]+$ \s?\??,what is the cube of 4,cube,\res,0.5,0.8,wh
+108,What is the area of cylinder with radius \^[-+]?[0-9]+$  and height  \^[-+]?[0-9]+$  \s?\??,what is the area of cylinder with radius 7 and height 5,cylinder,\res,0.5,0.8,wh
+109,What is the area of equilaterial triangle with side  \^[-+]?[0-9]+$ \s?\??,what is the area of equilateral tiangle with side 5,equilateral,\res,0.5,0.8,wh
+110,Is \^[-+]?[0-9]+$ even or odd \s?\??,is 5 even or odd,evenodd,\res,0.5,0.8,wh
+111,What is the factorial of \^[-+]?[0-9]+$ \s?\??,what is the factorial of 5,factorial,\res,0.5,0.8,wh
+112,how many foot is \^[-+]?[0-9]+$  meters \s?\??,how many foot is 5 meter,foottometer,\res,0.5,0.8,wh
+113,what is my age\s?\??,what is my age,get_age,You are \age years old.,1,0.8,wh
+114,what is the area of \w*\s?\??,what is the area of \India-Country-USA,get_area,area of \q is\res,0.5,0.8,wh
+115,what is the capital of \w*\s?\??,what is the capital of \India-Country-USA,get_cap,Capital of \q is \res,1,0.8,wh
+116,what is the calling code for \w*\s?\??,what is the calling code for \India-Country-USA,get_cc,Calling code for \q is \res,0.5,0.8,wh
+117,what is the currency of \w*\s?\??,what is the currency of \India-Country-USA,get_cur,Currency of \q is \res,1,0.8,wh
+118,what is the date in \w*\s?\??,what is the date in \India-country-USA,get_date,Date in \q is \res,1,0.8,wh
+119,what date is it today\s?\??,what date is it today,get_date,Date is \res,1,0.8,wh
+120,what day is it today\s?\??,what day is it today,get_day,Today its \res,1,0.8,wh
+121,who discovered \w*\s?\??,who discovered \Newton-Discovered-Benjamin,get_dis,\q is discovered by \res,1,0.8,wh
+122,what is the GDP of \w*\s?\??,what is the GDP of \India-Country-USA,get_gdp,GDP of \q is \res,0.5,0.8,wh
+123,who is \w*\s?\??,who is \actor-actress-person-noun-thing,get_info,\res,0.5,0.8,wh
+124,who invented \w*\s?\??,who invented \wright-Invented-Grahambell,get_inv,\q is invented by \res,1,0.8,wh
+125,what is my name\s?\??,what is my name,get_name,Your name is \name,1,0.8,wh
+127,what is the temperature in \w*\s?\??,what is the temperature in \India-country-USA,get_temp,Temperature in \q is \res,0.5,0.8,wh
+128,what is the temperature like outside\s?\??,what is the temperature like outside,get_temp,Temperature is \res,1,0.8,wh
+129,what is the time in \w*\s?\??,what is the time in \India-country-USA,get_time,Time in \q is \res,0.5,0.8,wh
+130,what is the time is it now\s?\??,what is the time now,get_time,Time is \res,1,0.8,wh
+132,What is the harmonic value of  \^[-+]?[0-9]+$  and  \^[-+]?[0-9]+$  \s?\??,what is the harmonic value of 5 and 9,harmonic,\res,0.5,0.8,wh
+133,What is the area of hexagon with side \^[-+]?[0-9]+$ \s?\??,what is the area of hexagon with side 8,hexagon,\res,0.5,0.8,wh
+134,how many inch is \^[-+]?[0-9]+$ meters \s?\??,how many inch is 5 meter,inchtometer,\res,0.5,0.8,wh
+135,What is the binary of \^[-+]?[0-9]+$ \s?\??,what is the binary of 10,inttoBinary,\res,0.5,0.8,wh
+136,how many miles is \^[-+]?[0-9]+$ kilometer  \s?\??,how many miles is 5 kilometer,kilotomiles,\res,0.5,0.8,wh
+137,What is the area of kite with length \^[-+]?[0-9]+$ and breath  \^[-+]?[0-9]+$  \s?\??,what is the area of kite with length 4 and breath 8,kite,\res,0.5,0.8,wh
+138,What is the lcm of \^[-+]?[0-9]+$ and \^[-+]?[0-9]+$ \s?\??,what is the lcm of 8 and 2,lcm,\res,0.5,0.8,wh
+139,What is log of \^[-+]?[0-9]+$ \s?\??,what is log of 10,log,\res,0.5,0.8,wh
+140,What is the mean value of  \^[-+]?[0-9]+$  and  \^[-+]?[0-9]+$  \s?\??,what is the mean value of 9 and 4,mean1,\res,0.5,0.8,wh
+141,how many meters is \^[-+]?[0-9]+$ centimeter \s?\??,how many meter is 5 centimeter,metertocentimeter,\res,0.5,0.8,wh
+142,how many meters is \^[-+]?[0-9]+$ foot \s?\??,how many meters is 5 foot,metertofoot,\res,0.5,0.8,wh
+143,how many meters is \^[-+]?[0-9]+$ inch \s?\??,how many meters is 5 inch ,metertoinch,\res,0.5,0.8,wh
+144,how many kilometer is \^[-+]?[0-9]+$ miles \s?\??,how many kilometers is 5 miles,milestokilo,\res,0.5,0.8,wh
+145,What is the multiplication of \^[-+]?[0-9]+$ and \^[-+]?[0-9]+$ \s?\??,what is the multipilcation of 5 and 3,multiplication,\res,0.5,0.8,wh
+146,Is \^[-+]?[0-9]+$ a negative number or not \s?\??,is 5 a negative number or not ,negativedetector,\res,0.5,0.8,wh
+147,What are prime numbers between  \^[-+]?[0-9]+$  to  \^[-+]?[0-9]+$  \s?\??,what are the prime numbers between 1 to 100,pm,\res,0.5,0.8,wh
+148,Is  \^[-+]?[0-9]+$  a palindrome number or not \s?\??,is 555 a palindrome number or not,pn,\res,0.5,0.8,wh
+149,Is \^[-+]?[0-9]+$ a prime no \s?\??,is 1 a prime number,prime,\res,0.5,0.8,wh
+150,Give any random number between \^[-+]?[0-9]+$ to \^[-+]?[0-9]+$ \s?\??,give any random number between 1 to 100,rdm,\res,0.5,0.8,wh
+151,What is the reverse of  \^[-+]?[0-9]+$ \s?\??,what is the reverse of 5321,reverse,\res,0.5,0.8,wh
+152,What is the area of rhombus with length \^[-+]?[0-9]+$ and breath  \^[-+]?[0-9]+$  \s?\??,what is the area of rhombus with length 4 and breath 8,rombus,\res,0.5,0.8,wh
+153,What is the simple intrest where principle is  \^[-+]?[0-9]+$  number of years is  \^[-+]?[0-9]+$  and rate is  \^[-+]?[0-9]+$  \s?\??,what is the simple intrest when principle is 100 number of year is 3 and rate is 5,simpleint,\res,0.5,0.8,wh
+154,what is the area of sphere when radius is  \^[-+]?[0-9]+$ \s?\??,what is the area of sphere when radius is 7,sphere1,\res,0.5,0.8,wh
+155,What is the sqaure of \^[-+]?[0-9]+$ \s?\??,what is the sqaure of 5,square,\res,0.5,0.8,wh
+156,Is \^[-+]?[0-9]+$ a strong number \s?\??,Is 145 a strong number,strong,\res,0.5,0.8,wh
+157,What is the substraction of \^[-+]?[0-9]+$ and \^[-+]?[0-9]+$ \s?\??,what is the substraction of 5 and 3,substraction,\res,0.5,0.8,wh
+159,Do you know \dhoni \s?\??,Do you know \cricket,*,\q ! Yeah he is one of the star player in cricket,1,0.8,wh

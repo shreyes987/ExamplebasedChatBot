@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/css/test8.css"/>
+</head>
+<body onload='responsiveVoice.speak( "{{ act }}" );'>
+  <form action="/knowledge_data" method="post">
+        <table border="1" class="topics" bgcolor="#fffff0">
+            <tr>
+                <th></th>
+                <th>NAME</th>
+                <th>DOB</th>
+                <th>GENDER</th>
+                <th>EMAIL</th>
+                <th>PROFESSION</th>
+                <th>WEBSITE</th>
+                <th>WORKING AT</th>
+                <th>STUDIED AT</th>
+                <th>HOBBIES</th>
+
+                </tr>
+            {% for t in entry %}
+            <tr>
+                <td><input type="radio" name="user" value="{{t[0]}}"></td>
+                <td>{{t[1]}}</td>
+                <td>{{t[2]}}</td>
+                <td>{{t[3]}}</td>
+                <td>{{t[4]}}</td>
+                <td>{{t[5]}}</td>
+                <td>{{t[6]}}</td>
+                <td>{{t[7]}}</td>
+                <td>{{t[8]}}</td>
+                <td>{{t[9]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+      <center>
+  <div id="output" style="text-align:left;,border: 1px solid black">
+      {% for t in ans %}
+        {{t}}<br>
+         {% endfor %}
+  </div>
+          <br>
+      <input type="text" placeholder=" Enter text here.." name="question" style="width:400px; height: 30px" id="inp" onkeydown="startConverting(event)" onkeyup="stopConverting(event)">
+          <br><input type="submit">&nbsp;&nbsp;<input type="button" value="Go Home" onclick="location.href='/'">&nbsp;&nbsp;
+</center>
+<style>
+
+    #output
+    {
+        <!--position:absolute;-->
+        width:500px;
+        height:350px;
+        margin:10px;
+        <!--top:70px;-->
+        border: 1px solid darkgrey;
+        <!--left:900px;-->
+        background-color: white;
+    }
+
+
+    table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #414345;
+    color: white;
+}
+body{
+    background-image: url("entrybg4.jpg");
+    background-repeat: no-repeat;
+    background:cover;
+}
+
+    <!--#new-->
+    <!--{-->
+        <!--position: absolute;-->
+        <!--top:70px;-->
+        <!--left:20px;-->
+        <!--height:555px;-->
+    <!--}-->
+
+
+    #inp
+    {
+        margin:10px;
+        <!--position:relative;-->
+        <!--left:890px;-->
+        <!--top:580px;-->
+    }
+
+</style>
+
+</body>
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+<script type="text/javascript">
+    var i = 0;
+    function stopConverting(event){
+        if(!event.ctrlKey && i==1){
+            document.getElementById('frm').submit();
+        }
+    }
+    function startConverting (event) {
+    var r = document.getElementById('inp');
+    if(event.ctrlKey){
+        i=1
+        if('webkitSpeechRecognition' in window){
+            var speechRecognizer = new webkitSpeechRecognition();
+            speechRecognizer.continuous = true;
+            speechRecognizer.interimResults = true;
+            speechRecognizer.lang = 'en-IN';
+            speechRecognizer.start();
+
+            var finalTranscripts = '';
+
+            speechRecognizer.onresult = function(event){
+                var interimTranscripts = '';
+                for(var i = event.resultIndex; i < event.results.length; i++){
+                    var transcript = event.results[i][0].transcript;
+                    transcript.replace("\n", "<br>");
+                    if(event.results[i].isFinal){
+                        finalTranscripts += transcript;
+                    }else{
+                        interimTranscripts += transcript;
+                    }
+                }
+                r.value = finalTranscripts + interimTranscripts;
+            };
+            speechRecognizer.onerror = function (event) {
+            };
+        }else{
+            r.innerHTML = 'Your browser is not supported. If google chrome, please upgrade!';
+        }
+        }
+    }
+
+</script>
+
+</html>

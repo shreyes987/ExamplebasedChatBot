@@ -1,0 +1,48 @@
+html, body
+{
+    height: 100%;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+#inp
+{
+width:100%
+}
+
+
+body
+{
+background-image: url("bg1.jpg")
+overflow:hidden;
+}
+#divo
+{
+position:absolute;
+top:80px;
+left:200px;
+}
+
+.animation:hover
+{
+box-shadow: 0px 0 15px #6A1FEC;
+-webkit-transform:scale(0.94);
+transform:scale(0.94);
+}
+.animation
+{
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+
+}
+
+#blankbox
+{
+    height:700px;
+}
+
+
